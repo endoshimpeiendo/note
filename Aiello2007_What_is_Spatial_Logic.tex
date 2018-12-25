@@ -1,0 +1,153 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Article Notes
+% LaTeX Template
+% Version 1.0 (1/10/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@latextemplates.com)
+% Christopher Eliot (christopher.eliot@hofstra.edu)
+% Anthony Dardis (anthony.dardis@hofstra.edu)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+10pt, % Default font size is 10pt, can alternatively be 11pt or 12pt
+a4paper, % Alternatively letterpaper for US letter
+twocolumn, % Alternatively onecolumn
+landscape % Alternatively portrait
+]{article}
+
+\input{structure.tex} % Input the file specifying the document layout and structure
+\usepackage{hyperref}
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\articletitle{What is Spatial Logic?} % The title of the article
+\articlecitation{} % The BibTeX citation key from your bibliography
+
+\datenotesstarted{December 15, 2018} % The date when these notes were first made
+\docdate{\datenotesstarted; rev. \today} % The date when the notes were lasted updated (automatically the current date)
+\docauthor{Summarized and Commnted by Shimpei Endo} % Your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\pagestyle{myheadings} % Use custom headers
+\markright{\doctitle} % Place the article information into the header
+
+%----------------------------------------------------------------------------------------
+%	PRINT ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{plain} % Plain formatting on the first page
+
+\printtitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE NOTES
+%----------------------------------------------------------------------------------------
+
+\section*{In a nutshell... }
+This introductory chapter of \cite{VanBenthem2007} overview \emph{spatial logic}, containing its description and historcial contexts.
+It has mattered to spatial logic (as other logics) to take a \emph{balance} between \emph{expressive power} and \emph{computational complexity}.
+
+\noindent \textbf{Keywords:} spatial logic, Hilbert, Tarski,
+
+\section*{Definiton and analogy.}
+\paragraph{Definition of spatial logic.}
+``By a \textit{spatial logic}, we understand any formal language interpreted over a class of structures featurung geometrical entities and relations, broadly construed.'' (p.1)
+Note that the authors do \emph{limit} it to a certain kind of `spaces'. Any `space', say topological, affine, metric, or more specific ones like Euclidean  three dimensional space are all what spatial logics matter.
+
+\paragraph{Pararell between space and time.}
+It is helpful to see the parellels between space (spatial logic) and time (temporal logic), the more established area.
+Temporal logic has its appeal in its good balance between expressive power and computational complexity. (p. 2)
+So expected is spatial logic.
+
+\section*{Historical Contexts: Hilbert and Tarski.}
+\paragraph{Historical contexts: Hilbert.}
+Euclidean classical geometry was a target of Hilbert's mathematical analysis.
+Hilbert relied on (abstract and lightly mathematicalized but still) idiomatic German for its language.
+
+\paragraph{Historical contexts: Tarski.}
+Spaces needed to wait Tarski 1959 for its being completely formalized. The development of formal logic and model-theoretic semantics made possible to ``prove the precise inferential and expressive resources of geometry'' (p. 2).
+The aim behind his 1959 paper was to search consequences of restricing the syntax (particularly, of a first-order logic).
+Sacrificing its expressive power, Tarski found that the theory of elementary geometry is \emph{decidable}, meaning that a mechanical method exists to determine whether a given sentence is true under the intended interpretation. Note that the second-order theory required for all Hilbert's axioms is undecidable.
+
+\paragraph{Tarski's impact.}
+``Tarski's discovery illustrates the most distinctive feature of logic in the wake of the model-theoretic revolution of the previous century: its fundamentally linguistic orientation.'' (p. 3)
+``On this view, spatial logic, as defined above, becomes the study of the relationship between geometrical structures and the spatial languages which describe them.'' (p.3)
+
+\paragraph{Elementary geometry aximatized }
+In elementary geometry, objects can be defined by a fixed number of points in points in the Euclidean plane. But we want more: polygons, arbitrary connected regions and what Tarski's Geometry of Solids dealed. Tarski's own system uses the second-order syntax and the object variables are assigned to not point but certain regions called solids (more specifically, the regular closed subsets of $\mathbb{R}^3$).
+The result is remarkable. The resulting theory (i) can be completely axiomatized in the second-order language and (ii) is categorical.
+\footnote{A theory is categorical when any model of the teory is isomorphic to the normal interpretation on the reals.}
+
+\paragraph{More coarse: binding topology}
+Tarski and McKinsey 1944 found that ``topology has small decidable fragments'' once interpretating topological interior as a modal operator.
+
+\section*{Three princpal directions of spatial logic}
+\paragraph{1. What geometrical entities do you use for interpreatation?}
+
+\paragraph{2. What do you assign to the non-logical primitives?}
+Like $|| p ||$.
+\paragraph{3. Which syntax?}
+
+\paragraph{Classification tradition of geometries, connected.}
+Spatial logic clasifies geometrical languages with respect to their spatial primitives. This shares the same idea with the long-standing tradition of classification of geometries (e.g. Klein's Erlanger Programm).
+However, the difference is ``the logical approach opens up many new possibilities in this regard, such as, for instance, a new sort of invariance between topological patterns, much coarser even than topological homeomorphism, viz. modal bisimulation.'' (p. 5)
+
+\section*{Four salient issues of spatial logic}
+\paragraph{1. How can we characterize its valid formulas?}
+\paragraph{2. What is its expressive power?}
+\paragraph{3. What is its computational complexity?}
+\paragraph{4. Whata laternative interpretations does it have?}
+
+\section*{Recent trends: from computer science.}
+\begin{description}
+  \item [Qualitative spatial reasoning.]
+  \item [Spatial database.]
+  \item [Image processing.]
+\end{description}
+
+\section*{To a misunderstanding.}
+\paragraph{A possible misunderstanding.}
+\paragraph{A reply (with an aid of historical backgrounds)}
+
+\section*{Construction of this volume.}
+
+\begin{description}
+  \item [A. Tarskian spirit: first-order languages.]
+  \item [B. Modal logics for topology: Framgement of first order logic.]
+  \item [C. Space combined with others: time.]
+  \item [D. Further mathematical and computational advance.]
+  \item [E. A coda: metaphysics. ]
+\end{description}
+
+\section*{What does \emph{not} this book talk about}
+
+\section*{Comments by me}
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\refname}{Reference} % Change the default bibliography title
+
+\bibliography{Mendeley} % Input your bibliography file
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

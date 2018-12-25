@@ -1,0 +1,138 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Article Notes
+% LaTeX Template
+% Version 1.0 (1/10/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@latextemplates.com)
+% Christopher Eliot (christopher.eliot@hofstra.edu)
+% Anthony Dardis (anthony.dardis@hofstra.edu)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+10pt, % Default font size is 10pt, can alternatively be 11pt or 12pt
+a4paper, % Alternatively letterpaper for US letter
+twocolumn, % Alternatively onecolumn
+landscape % Alternatively portrait
+]{article}
+
+\input{structure.tex} % Input the file specifying the document layout and structure
+\usepackage{hyperref}
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\articletitle{The Cardinality Objection to David Lewis's Modal Realism} % The title of the article
+\articlecitation{\cite{Pruss2001_CardinalityObjection}} % The BibTeX citation key from your bibliography
+
+\datenotesstarted{December 25, 2018} % The date when these notes were first made
+\docdate{\datenotesstarted; rev. \today} % The date when the notes were lasted updated (automatically the current date)
+\docauthor{Summarized and Commnted by Shimpei Endo} % Your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\pagestyle{myheadings} % Use custom headers
+\markright{\doctitle} % Place the article information into the header
+
+%----------------------------------------------------------------------------------------
+%	PRINT ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{plain} % Plain formatting on the first page
+
+\printtitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE NOTES
+%----------------------------------------------------------------------------------------
+
+\section*{In a nutshell... }
+Pruss presents the \emph{cardinality} objection to Lewisian modal realsim.
+Pruss updates previous cardinality objections of Forrest and Armstrong. Pruss demonstrates that unrestricted principle of recombination entails that the collection of all possible worlds cannot be a set.
+Pruss also notes that any theory of possibilia cannot say that the collection of all possible worlds is a set.
+
+\noindent \textbf{Keywords:} modal realism, anti-Lewis, David Lewis, cardinality
+
+\section*{Comments by me}
+\paragraph{System objection.}
+According to my own categorization, the cardinality objection is categorized as ``system'' objection for it points out an inner contradiction within Lewis's theory.
+
+
+\section*{1. Introduction}
+\paragraph{The original cardinality objection by Forrest and Armstrong.}
+\cite{Forrest1984} argues that ``by considering an allegedly possible world which has as its parts duplicates of all the worlds one can arrive at a contradiction to the effect that the number of individuals in the totality of all worlds has cardinality greater than it has'' [p. 169, in Pruss's words].
+
+\paragraph{Lewis's own defense: unrestricted principle of recombination.}
+
+\begin{quote}
+  Not only two possible individuals, but any number should admit of combination by means of coexisting duplicates. Indeed, the number might be infinite.
+  \cite[p. 89]{Lewis1986}
+\end{quote}
+
+Responding to Forrest and Armstrong, Lewis further added another restriction ``size and shape permitting'' [\textit{ibid}] to block ``Forrest and Armstrong's gigantic world which is an aggregation of copies of all worlds.'' [p. 170]
+
+\paragraph{Nolan's defense from cardinality objection.}
+Nolan defended Lewisian modal realism by imposing the new principle of \emph{unrestricted} principle of recombination [p. 170].
+
+\section*{2. There is no set of all possible worlds}
+This section offers Pruss's version of cardinality objection.
+The claim is there is no set of all possible worlds.
+For RAA, assume otherwise.
+Take $n$ such that  $n > | w |$.
+By Axiom of Choice, there is $\aleph_0 = n^* \meq n > | w |$.
+This indicates that ther exists exactly $n$ distinct cardinal numbers $m$ satisfying $\alph_0 leq m < n^*$.
+Recall that unrestricted recombination tells that for any $m$, there is a possible world $w_m$ which contains $m$ photons.
+As far as $m \neq m^*$, we can have $w_m \neq w_{m^{*}}$ since they contain different numbers of photons. So
+there is at least $n$ worlds which satisfies
+$\aleph_0 \leq m \leq n^* $.
+This contradict the beginning assumption of $n > | w |$.
+
+\paragraph{Pro-choice: Pruss's cost-benefit calicuration}
+The argument above relies on the Axiom of Choice (AC). Noticing that AC leads some paradoxical conclusions such as Banach-Tarski's one, Pruss weights AC to EMR.
+``If we were forced to give up the AC in order to hold on to Lewis's EMR, the price would be too high.'' [p. 172]
+
+For blocking EMR, the argument above can be reconstructed after replacing AC to a reasonable assumption as follow:
+
+\begin{quote}
+  There is a well-defined predicate $S$ such that $Sw$ holds if and only if $w$ is a possible world such that the collection of all photons in w is a set, so that if $A$ is a set, so is $\{ x \in A : Sx \}$
+\end{quote}
+
+\section*{3. Lewis's proviso}
+This section deals with Lewis's restriction which only allows recombination as ``size and shape'' permitting. Pruss claims that the contradiction still remains after this limitation. 
+
+\section*{4. What should Lewis do?}
+\paragraph{Abandon EMR.}
+Pruss advises Lewis just to abandon EMR because his concrete view on possible worlds leads us to think there is a set of possible worlds (other concrete things can form sets, with no problem). If not, Lewis at least confirm that the collection of possible worlds is a \emph{proper class}, instead of a set. [p. 175]
+
+\paragraph{What about Nolan?}
+Pruss further discuss a weaker variant of Nolan.
+
+\paragraph{The bottom line: there is no set of all possible worlds.}
+In closing, Pruss expands his argument to any reasonable theory of possibilia; they should not have a set of all possible worlds.
+[p. 176]
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\refname}{Reference} % Change the default bibliography title
+
+\bibliography{Mendeley} % Input your bibliography file
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
